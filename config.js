@@ -1,14 +1,9 @@
 export const config = {
-  domainSource: "https://f69a71f6-9fd8-443b-a040-78beb5d404d4.weweb-preview.io", // Your WeWeb app preview link
+  domainSource: "https://e44dd3fa-cb26-42eb-bc21-7287a9745fd9.weweb-preview.io/",
   patterns: [
       {
-          pattern: "/event/[^/]+",
-          metaDataEndpoint: "https://xeo6-2sgh-ehgj.n7.xano.io/api:8wD10mRd/event/{id}/meta"
-      },
-      {
-          pattern: "/team/profile/[^/]+",
-          metaDataEndpoint: "https://xeo6-2sgh-ehgj.n7.xano.io/api:LjwxezTv/team/profile/{profile_id}/meta"
+          pattern: "/instructor/[^/]+",
+          metaDataEndpoint: "https://alvuagzviphwrdjreldb.supabase.co/functions/v1/teacher-metadata?slug_input={id}"
       }
-      // Add more patterns and their metadata endpoints as needed
   ]
 };
